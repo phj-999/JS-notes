@@ -6,16 +6,11 @@ const app = new koa();
 
 const testRouter = new Router()
 
-
-
-const PRIVATE_KEY = fs.readFileSync('./keys/private.key')
-const PUBLIC_KEY =  fs.readFileSync('./keys/public.key')   //传递来的都是buffer
-
+const SERCET_KEY = 'ABC123' //必须设置 因为是hs256算法对称加密 所以需要一个密钥来加密解密
 testRouter.get('/test', (ctx,next) => {
     const user = {id:110,name:'why'}
-    const token = jwt.sign(user,PRIVATE_KEY,{
-        expiresIn:10 ,    // 单位是秒
-        algorithm: 'RS256'  //默认是hs256算法  这里用的是非对称加密 所以要指定RS256的算法
+    const token = jwt.sign(user,SERCET_KEY,{
+        expiresIn:10*1000     // 单位是秒
     })
    
  ctx.body = token   //返回token
@@ -25,20 +20,20 @@ testRouter.get('/test', (ctx,next) => {
 testRouter.get('/demo',(ctx,next)=>{
 
     console.log(ctx.headers);
-    const authorization = ctx.headers.authorization
+    const authorization = ctx.headers.authorization  //拿到token
 
-    const token = authorization.replace('Bearer','')
+
+    const token = authorization.replace('Bearer','')  //单独取出来token
 
   try {
-    const result = jwt.verify(token,PUBLIC_KEY,{
-        algorithms:['RS256']
-    })
+    const result = jwt.verify(token,SERCET_KEY)
     ctx.body=result
   } catch (error) {
-      console.log(error,message);
       ctx.body='token无效哦'  //token有设置过期时间
   }
 })
+
+//POSTMAN验证  localhost:3000/demo
 
 app.use(testRouter.routes())
 app.use(testRouter.allowedMethods())

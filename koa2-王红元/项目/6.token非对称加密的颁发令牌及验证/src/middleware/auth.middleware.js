@@ -67,7 +67,7 @@ const verifyAuth = async (ctx,next)=>{
 
     //验证token
    try {
-    jwt.verify(token,PUBLIC_KEY,{
+    const result = jwt.verify(token,PUBLIC_KEY,{
         
         algorithms:['RS256']
 
@@ -90,5 +90,5 @@ const verifyAuth = async (ctx,next)=>{
 
 
 module.exports = {
-    verifyLogin
+    verifyLogin, verifyAuth
 }

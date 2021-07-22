@@ -3,7 +3,7 @@ const Router  = require("Router");
 
 const authRouter = new Router();
 
-const {login,success} = require ('../controller/auth.controller.js')
+const {login} = require ('../controller/auth.controller.js')
 
 const {
     verifyLogin,

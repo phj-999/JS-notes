@@ -92,6 +92,8 @@ openssl rsa -pubin -in <filename> -RSAPublicKey_out
 
 
 coderwhy老师的命令  
+打开苹果终端或者gitbash
+openssl
 生成私钥          私钥颁发
 genrsa -out private.key 1024
 根据私钥生成公钥   公钥解密
@@ -99,4 +101,5 @@ rsa - in private.key -pubout -out public.key
 
 踩坑 MAC自带openssl  直接使用terminal终端
      windows没有自带openssl   直接使用git bash终端 或者 安装openssl  coderwhy老师建议windows直接使用git bash终端
-       
+
+用户输入用户名和密码登录，如果用户名和密码正确的话，使用 jsonwebtoken.sign() 生成 token，并返回给客户端。客户端将token存储在本地存储，在每次的 HTTP 请求中，都将 token 添加在 HTTP Header Authorazition: Bearer token 中。然后后端每次去验证该token的正确与否。只有token正确后才能访问到对应的资源。

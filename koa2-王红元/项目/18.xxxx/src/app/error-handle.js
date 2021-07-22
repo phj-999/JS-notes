@@ -44,11 +44,20 @@ const errorhandle = (error, ctx) => {
             //用户未授权
         case errorTypes.UNAUTHORIZATION:
 
-            status = 401 // 未授权
+            status = 401 // 无效token
 
             message = '无效的token'
 
             break;
+
+            //
+            case errorTypes.UNPERMISSION:
+
+                status = 400 // 未授权
+    
+                message = '您不具备操作的权限'
+    
+                break;
 
         default:
 
