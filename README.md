@@ -1,8 +1,8 @@
-TOC
+[TOC]
+
+
 
 # **TS笔记**
-
-## [TS笔记详情目录链接md](./Ts笔记/TS笔记.md)
 
 >  静态类型
 >
@@ -23,6 +23,8 @@ TOC
 >  tsconfig编译文件
 >
 >  Enum枚举类型
+
+[TS笔记详情目录链接md](./Ts笔记/TS笔记.md)
 
 # **nodejs**
 > egg
