@@ -62,4 +62,11 @@
 
 **[自动化测试md](自动化测试笔记\自动化测试.md)**
 
+
+
 # [Js部分的代码笔记](./Js部分的代码笔记)
+
+
+
+# [react-query笔记](./react-query笔记/react-query笔记.md)
+
