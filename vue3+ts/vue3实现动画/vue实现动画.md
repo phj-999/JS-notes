@@ -4,8 +4,10 @@
 
 ## 一、过渡的基本使用
 [链接](src\动画的基本使用\过渡动画基本使用.vue)
+```javascript
 组件 <transition name="why">。。。 </transition>
 然后style中定义
+```
 
 ```css
   .why-enter-from,     .why-enter-to,         .why-enter-active,
@@ -95,5 +97,6 @@ npm install gsap
 ![Image](https://github.com/phj-999/JS-notes/blob/main/vue3+ts/vue3%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB/src/assets/Javascript%E9%92%A9%E5%AD%90.PNG?raw=true)
 
 ## gsap库的使用 
-done是让知道执行完动画了
+done是让知道执行完动画了<br/>
 [链接](src\结合第三方库animate.css使用\结合gsap使用.vue)
+
