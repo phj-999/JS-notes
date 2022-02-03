@@ -1,5 +1,7 @@
+[TOC]
 
 # 过渡动画的基本使用
+
 ## 一、过渡的基本使用
 [链接](src\动画的基本使用\过渡动画基本使用.vue)
 组件 <transition name="why">。。。 </transition>
@@ -54,3 +56,32 @@ out-in: 当前元素先进行过渡，完成之后新元素过渡进入；
       <component :is="isShow ? 'home': 'about'"></component>
  </transition>
 ```
+
+
+
+------
+
+
+
+# 认识第三方库animate.css
+
+> 使用：安装-->导入样式-->使用animation动画或者animate提供的类
+接下来在使用的时候我们有两种用法：
+
+## 基本使用
+```CSS   
+用法一：直接使用animate库中定义的keyframes 动画；                
+.why-enter-active {                             
+    animation: bounceInUp 1s ease-in;           
+  }                                             
+  .why-leave-active {                           
+    animation: bounceInUp 1s ease-in reverse;   
+  } 
+  <!--用法二：直接使用animate库提供给我们的类-->；  
+    <transition enter-active-class="animate__animated animate__fadeInDown"
+                leave-active-class="animate__animated animate__flipInY">
+      <h2 class="title" v-if="isShow">Hello World</h2>
+    </transition>                                         
+```
+# 认识gsap库
+>通过JavaScript来实现一些动画的效果，这个时候我们可以选择使用gsap库来完成。
