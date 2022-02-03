@@ -99,4 +99,5 @@ npm install gsap
 ## gsap库的使用 
 done是让知道执行完动画了<br/>
 [链接](src\结合第三方库animate.css使用\结合gsap使用.vue)
-
+## gsap数字递增动画
+[代码链接](src\结合第三方库animate.css使用\gsap数字递增动画.vue)
