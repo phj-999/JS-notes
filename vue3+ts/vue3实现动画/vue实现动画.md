@@ -101,3 +101,23 @@ done是让知道执行完动画了<br/>
 [链接](src\结合第三方库animate.css使用\结合gsap使用.vue)
 ## gsap数字递增动画
 [代码链接](src\结合第三方库animate.css使用\gsap数字递增动画.vue)
+
+# 列表实现动画
+## transition-group的使用
+[代码链接](src\列表动画的使用\01_transition-group的使用.vue)<br/>
+如果渲染的是一个列表，并且该列表中添加删除数据也要有动画执行  这个时候我们要使用[<transition-group>] 组件来完成；
+默认情况下，它不会渲染一个元素的包裹器，但是可以指定一个元素并以tag attribute 进行渲然  内部元素总是需要提供唯一的key attribute 值
+```JavaScript
+    <transition-group tag="p" name="why">
+      <span v-for="item in numbers" :key="item" class="item">{{item}}</span>
+    </transition-group>
+```
+## 列表过渡的基本使用
+
+列表过渡的移动动画
+通过使用一个新增的v-move 的class来完成动画；
+它会在元素改变位置的过程中应用；
+像之前的名字一样，我们可以通过name来自定义前缀；
+## 列表的交错过渡案例
+[代码链接](src\列表动画的使用\02_列表的交替动画.vue)
+通过gsap的延迟delay属性，做一个交替消失的动画
