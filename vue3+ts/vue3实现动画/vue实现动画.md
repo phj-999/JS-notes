@@ -69,6 +69,7 @@ out-in: 当前元素先进行过渡，完成之后新元素过渡进入；
 接下来在使用的时候我们有两种用法：
 
 ## 基本使用
+[链接](src\结合第三方库animate.css使用\结合animate使用.vue)
 ```CSS   
 用法一：直接使用animate库中定义的keyframes 动画；                
 .why-enter-active {                             
@@ -84,4 +85,15 @@ out-in: 当前元素先进行过渡，完成之后新元素过渡进入；
     </transition>                                         
 ```
 # 认识gsap库
->通过JavaScript来实现一些动画的效果，这个时候我们可以选择使用gsap库来完成。
+>通过JavaScript来实现一些动画的效果，这个时候我们可以选择使用gsap库来完成。它可以通过JavaScript为CSS属性、SVG、Canvas等设置动画，并且是浏览器兼容的；
+npm install gsap
+
+## Javascript钩子
+当我们使用JavaScript来执行过渡动画时，需要进行done 回调，否则它们将会被同步调用，过渡会立即完成。
+添加:css="false"，也会让Vue 会跳过CSS 的检测，除了性能略高之外，这可以避免过渡过程中CSS 规则的影响。
+
+<img src="E:\学习文件\学习笔记\JS-study-notes\vue3+ts\vue3实现动画\src\assets\Javascript钩子.PNG" alt="Javascript钩子" style="zoom: 80%;" />
+
+## gsap库的使用 
+done是让知道执行完动画了
+[链接](src\结合第三方库animate.css使用\结合gsap使用.vue)
