@@ -92,7 +92,7 @@ npm install gsap
 当我们使用JavaScript来执行过渡动画时，需要进行done 回调，否则它们将会被同步调用，过渡会立即完成。
 添加:css="false"，也会让Vue 会跳过CSS 的检测，除了性能略高之外，这可以避免过渡过程中CSS 规则的影响。
 
-<img src="E:\学习文件\学习笔记\JS-study-notes\vue3+ts\vue3实现动画\src\assets\Javascript钩子.PNG" alt="Javascript钩子" style="zoom: 80%;" />
+![Image](https://github.com/phj-999/JS-notes/blob/main/vue3+ts/vue3%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB/src/assets/Javascript%E9%92%A9%E5%AD%90.PNG?raw=true)
 
 ## gsap库的使用 
 done是让知道执行完动画了
