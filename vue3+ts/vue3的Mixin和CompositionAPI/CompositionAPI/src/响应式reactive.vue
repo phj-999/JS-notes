@@ -12,6 +12,7 @@ setup(props) {
     const increment=()=>{
         state.counter++
     }
+    
     return{
         state
     }
