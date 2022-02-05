@@ -31,3 +31,9 @@ import home from './home.vue'
 设置激活a元素后应用的class，默认是router-link-active
 4. exact-active-class属性：
 链接精准激活时，应用于渲染的<a> 的class，默认是router-link-exact-active；
+
+## 路由懒加载
+当打包构建应用时，JavaScript 包会变得非常大，影响页面加载：import函数就是返回一个Promise；
+```javascript
+path: "/about", component:()=>import('./about') 这样写成为路由懒加载 打包的时候会分包
+```
