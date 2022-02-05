@@ -37,3 +37,40 @@ import home from './home.vue'
 ```javascript
 path: "/about", component:()=>import('./about') 这样写成为路由懒加载 打包的时候会分包
 ```
+## 动态路由基本匹配
+给定匹配模式的路由映射到同一个组件 例如，我们可能有一个User 组件，它应该对所有用户进行渲染，但是用户的ID是不同的；
+```Javascript
+path:'/user/:id'
+```
+## 获取动态路由的值
+- 在template中，直接通过$route.params获取值；
+```Javascript
+　<template> <h2>{{$route.params}}</h2></template>
+```
+- 在created中，通过this.$route.params获取值；
+- 在setup中，我们要使用vue-router库给我们提供的一个hook useRoute；该Hook会返回一个Route对象，对象中保存着当前路由相关的值；
+```Javascript
+　setup(){
+  const route = useRoute()
+  console.log(route.param.id)
+}
+```
+嵌套路由
+children:[]里面配置。然后通过router-view组件展示 
+## 页面跳转
+setup里面通过useRoute拿到router， route.replace（）   方法里面 this.$router.push
+## router-link的v-slot
+>通过插槽的形式告诉我们渲染成什么内容
+
+- href：解析后的URL；
+- route：解析后的规范化的route对象；
+- navigate：触发导航的函数；
+- isActive：是否匹配的状态；
+- isExactActive：是否是精准匹配的状态；
+```Javascript
+<router-link to='/home' v-slot='props' custom>
+<button @click='props.href'>{{props.href}}</button>
+<button @click='props.navigate'>哈哈哈</button>
+<button :class='{'active':props.isActive}'>哈哈哈</button>
+</router-link>
+```
