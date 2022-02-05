@@ -74,3 +74,23 @@ setup里面通过useRoute拿到router， route.replace（）   方法里面 this
 <button :class='{'active':props.isActive}'>哈哈哈</button>
 </router-link>
 ```
+## router-view的v-slot
+router-view也提供给我们一个插槽，可以用于transition和keep-alive 组件来包裹你的路由组件：
+- Component：要渲染的组件；
+- route：解析出的标准化路由对象；
+
+```javascript
+<router-view router-view>
+  <transition name='why'>
+    <keep-alive>
+      <component :is='Component'></component>
+    </keep-alive>
+  </transition>
+</router-view>
+
+.router-link-active{
+  color:red
+}
+.why-enter-from,.why-leave-to{opacity:0},
+.why-enter-active,.why-leave-active{transitioc:opacity 1s ease-in}
+```
