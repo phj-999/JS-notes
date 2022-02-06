@@ -94,3 +94,21 @@ router-view也提供给我们一个插槽，可以用于transition和keep-alive 
 .why-enter-from,.why-leave-to{opacity:0},
 .why-enter-active,.why-leave-active{transitioc:opacity 1s ease-in}
 ```
+## 动态添加路由
+```javascript
+//动态添加
+const xxxRoute={path:'/xxx',component:()=>import('./xxx/)}
+//添加顶级路由对象
+router.addRoute(xxxRoute)
+// 添加二级路由对象
+router.addRouter('home',{path:'/xxx',component:()=>import('./xxx/)})
+//添加三级路由
+//在二级路由里面写children:[]，三级路由在里面写
+```
+## 动态删除路由
+- 方式一：添加一个name相同的路由；
+- 方式二：通过removeRoute方法，传入路由的名称；router.remove('name'),比如Axx组件的name就是axx
+- 方式三：通过addRoute方法的返回值回调；
+## 路由的其他方法补充：
+- router.hasRoute()：检查路由是否存在。
+- router.getRoutes()：获取一个包含所有路由记录的数组。
