@@ -27,3 +27,67 @@
   }
 ```
 ## 在setup中使用mapState
+# vuex五大核心
+getters
+## getters的基本使用
+某些属性我们可能需要经过变化后来使用，这个时候可以使用getters
+## mutations
+mutations是修改state的 只能同步 不能异步
+所以有个Actions层  来处理异步、网络请求之类的
+action通过commit提交mutations来修改state
+- 基本操作
+```javascript
+mutations:{
+    inc(state){
+        state.counter++
+    }
+}
+```
+- Mutation携带数据
+```javascript
+可以使用参数：
+mutations:{
+    inc(state,payload){
+        state.counter+=payload
+    }
+    payload为对象类型
+    inc(state,payload){
+        state.counter +=payload.count
+    }
+
+}
+对象风格类型的提交
+$store.commit({
+    type:'ainc',count:100
+})
+
+Mutation常量类型
+定义常量：mutation-type.js
+export const ADD_COUNTER ='ADD_COUNTER'
+定义mutation
+[ADD_COUNTER](state,payload){...}
+提交
+$store.commit({type: ADD_COUNTER,count:100})
+```
+## mapMutations辅助函数
+借助此辅助函数 可以帮我们快速映射到对应的方法中：
+```Javascript
+method:{
+   ...mapMutations({addNumber:ADD_NUMBER})
+   ...mapMutations(['increment','decrement'])
+}
+//在setup里面使用
+const mutations = mapMutations(['increment','decrement'])
+const mutations2 = mapMutations({addNumber:ADD_NUMBER})
+
+```
+## Actions的基本使用
+类似于mutation 不同于在于
+action提交的是mutation 而不是直接更改状态
+action可以包含任意异步操作
+
+action有个重要参数context，是一个和store实例均有相同属性和方法大的context，但又不是store对象
+可以从中获取到commit方法来提交一个mutation 或通过context.state和context.getters来获取state和getters
+
+正常流程：
+methods里面分发action，同时action里面写了函数commit提交mutation，mutataion的函数里面操作了state
