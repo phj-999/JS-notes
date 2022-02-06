@@ -136,11 +136,11 @@
 > [I]  egg操作mysql
 >
 > a、方式1：直接操作
-# [vue3+ts笔记](./vue3+ts/目录.md)
+# [vue3+ts笔记](./vue3+ts)
 
-[vue3+ts笔记详情目录链接](./vue3+ts/目录.md)
+[vue3+ts笔记详情目录链接](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts)
 
-## [组件部分](https://github.com/phj-999/JS-notes/blob/main/vue3%2Bts/%E7%BB%84%E4%BB%B6%E9%83%A8%E5%88%86/%E7%AC%94%E8%AE%B0.md)
+## [组件部分](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/%E7%BB%84%E4%BB%B6%E9%83%A8%E5%88%86)
 
 >  一、跨组件通信
 >  1、插槽
@@ -163,7 +163,7 @@
 >
 >  六、组件的v-model
 
-## [vue3实现动画](https://github.com/phj-999/JS-notes/blob/main/vue3%2Bts/vue3%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB/vue%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB.md)
+## [vue3实现动画](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vue3%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB)
 
 >  一、过渡的基本使用
 >  Transition组件的做了什么？原理？
@@ -190,9 +190,11 @@
 >  1、transition-group的使用
 >  2、 列表过渡的基本使用
 >  3、 列表的交错过渡案例
+
+## [vue3的Mixin和CompositionAPI](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vue3%E7%9A%84Mixin%E5%92%8CCompositionAPI)
 ## vueRouter
 
-[vueRouter链接](https://github.com/phj-999/JS-notes/blob/main/vue3%2Bts/vuerouter/router.md)
+[vueRouter链接](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vuerouter)
 
 > 一、使用vue-router的步骤
 > 二、router-view组件

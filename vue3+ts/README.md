@@ -1,7 +1,7 @@
 [TOC]
 
- # [组件部分](vue3+ts\组件部分\笔记.md)
- **[组件部分笔记详情目录链接](vue3+ts\组件部分\笔记.md)**
+ # [组件部分](vue3+ts/组件部分)
+ **[组件部分笔记详情目录链接](vue3+ts/组件部分)**
 
 >  一、跨组件通信
 >  1、插槽
@@ -25,8 +25,8 @@
 >  六、组件的v-model
 
 
- # [vue3实现动画](vue3+ts\vue3实现动画\vue实现动画.md)
- **[vue3实现动画笔记详情目录链接](vue3+ts\vue3实现动画\vue实现动画.md)**
+ # [vue3实现动画](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vue3%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB)
+ **[vue3实现动画笔记详情目录链接](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vue3%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB)**
 
 >  一、过渡的基本使用
 >  Transition组件的做了什么？原理？
@@ -55,11 +55,11 @@
 > 3、 列表的交错过渡案例
 
 # vue3的Mixin和CompositionAPI
-**[vue3的Mixin和CompositionAPI链接](./vue3的Mixin和CompositionAPI/笔记.md)**
+**[vue3的Mixin和CompositionAPI链接](./vue3的Mixin和CompositionAPI)**
 
 # vueRouter
 
-[vueRouter链接](./vuerouter/router.md)
+[vueRouter链接](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vuerouter)
 
 > 一、使用vue-router的步骤
 > 二、router-view组件
