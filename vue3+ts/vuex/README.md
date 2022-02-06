@@ -13,3 +13,17 @@
 - 在setup中使用；
 
 # [基本使用过程](./基本使用过程)
+# 组件获取状态
+## mapState辅助函数拿取state
+分为对象写法 和数组写法
+```javascript
+  computed:{
+      //数组写法 其他的计算属性从mapstate获取  返回一个对象
+      ...mapState(['counter','name','height'])
+      //或者 对象写法
+      ...mapstate({
+          sCounter:state=>state.counter
+      })
+  }
+```
+## 在setup中使用mapState
