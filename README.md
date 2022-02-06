@@ -194,7 +194,7 @@
 ## [vue3的Mixin和CompositionAPI](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vue3%E7%9A%84Mixin%E5%92%8CCompositionAPI)
 ## vueRouter
 
-[vueRouter链接](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vuerouter)
+***[vueRouter链接](https://github.com/phj-999/JS-notes/tree/main/vue3%2Bts/vuerouter)***
 
 > 一、使用vue-router的步骤
 > 二、router-view组件
