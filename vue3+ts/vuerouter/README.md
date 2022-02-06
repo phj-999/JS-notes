@@ -1,9 +1,11 @@
 # vueRouter
+
 ## 使用vue-router的步骤:
 第一步：创建路由组件的组件；
 第二步：配置路由映射: 组件和路径映射关系的routes数组；
 第三步：通过createRouter创建路由对象，并且传入routes和history模式；
 第四步：使用路由: 通过<router-link>和<router-view>；
+
 - [基本使用](./基本使用/router/index.js)
 ## router-view组件
 相当于占位符
@@ -112,3 +114,32 @@ router.addRouter('home',{path:'/xxx',component:()=>import('./xxx/)})
 ## 路由的其他方法补充：
 - router.hasRoute()：检查路由是否存在。
 - router.getRoutes()：获取一个包含所有路由记录的数组。
+## 路由导航守卫
+>主要用来跳转或取消的方式守卫路由
+比如 没有登录不允许进入用户界面
+### 全局的前置守卫beforeEach是在导航触发时会被回调的
+[代码示例](./beforeEach路由导航/router/index.js)
+- 两个参数：
+1. to：即将进入的路由Route对象；
+2. from：即将离开的路由Route对象；
+- 返回值：
+1. false：取消当前导航；
+2. 不返回或者undefined：进行默认导航；
+3. 返回一个路由地址：
+4. 可以是一个string类型的路径；
+5. 可以是一个对象，对象中包含path、query、params等信息；
+>在Vue2中我们是通过next函数来决定如何进行跳转的；但是在Vue3中是通过返回值来控制的，不再推荐使用next函数，这是因为开发中很容易调用多次next；
+## 完整的导航解析流程：
+>完整的导航解析流程：
+- 导航被触发。
+- 在失活的组件里调用beforeRouteLeave 守卫。
+- 调用全局的beforeEach 守卫。
+- 在重用的组件里调用beforeRouteUpdate 守卫(2.2+)。
+- 在路由配置里调用beforeEnter。
+- 解析异步路由组件。
+- 在被激活的组件里调用beforeRouteEnter。
+- 调用全局的beforeResolve 守卫(2.5+)。
+- 导航被确认。
+- 调用全局的afterEach 钩子。
+- 触发DOM 更新。
+- 调用beforeRouteEnter 守卫中传给next 的回调函数，创建好的组件实例会作为回调函数的参数传入。

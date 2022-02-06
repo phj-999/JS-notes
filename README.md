@@ -140,7 +140,7 @@
 
 [vue3+ts笔记详情目录链接](./vue3+ts/目录.md)
 
-组件部分
+## [组件部分](https://github.com/phj-999/JS-notes/blob/main/vue3%2Bts/%E7%BB%84%E4%BB%B6%E9%83%A8%E5%88%86/%E7%AC%94%E8%AE%B0.md)
 
 >  一、跨组件通信
 >  1、插槽
@@ -163,7 +163,7 @@
 >
 >  六、组件的v-model
 
-vue3实现动画
+## [vue3实现动画](https://github.com/phj-999/JS-notes/blob/main/vue3%2Bts/vue3%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB/vue%E5%AE%9E%E7%8E%B0%E5%8A%A8%E7%94%BB.md)
 
 >  一、过渡的基本使用
 >  Transition组件的做了什么？原理？
@@ -190,3 +190,24 @@ vue3实现动画
 >  1、transition-group的使用
 >  2、 列表过渡的基本使用
 >  3、 列表的交错过渡案例
+## vueRouter
+
+[vueRouter链接](https://github.com/phj-999/JS-notes/blob/main/vue3%2Bts/vuerouter/router.md)
+
+> 一、使用vue-router的步骤
+> 二、router-view组件
+> 三、router-link组件
+>
+> 1. router-link属性配置
+> 四、路由懒加载
+> 五、动态路由基本匹配
+> 六、获取动态路由的值
+> 七、页面跳转
+> 八、router-link的v-slot
+> 九、router-view的v-slot
+> 十、动态添加路由
+> 十一、动态删除路由
+> 十二、路由的其他方法补充
+> 十三、路由导航守卫
+> 1. 全局的前置守卫beforeEach是在导航触发时会被回调的
+> 十四、完整的导航解析流程
