@@ -43,7 +43,7 @@ const info: [string,number]=['why',12]   //元组类型内必须赋值
 ```
 使用场景
 
-函数的参数和返回值类型
+# 函数的参数和返回值类型
 ```javascript
 // 给参数加上类型注解: num1: number, num2: number
 // 给返回值加上类型注释: (): number
@@ -51,7 +51,7 @@ const info: [string,number]=['why',12]   //元组类型内必须赋值
 function sum(num1: number, num2: number) { return num1 + num2 }
   // sum(123, 321)
 ```
-匿名函数的参数类型
+# 匿名函数的参数类型
 ```javascript
 // 通常情况下, 在定义一个函数时, 都会给参数加上类型注解的
 function foo(message: string) {}
@@ -60,7 +60,7 @@ const names = ["abc", "cba", "nba"]
 // 上下文中的函数: 可以不添加类型注解
 names.forEach(function(item) {console.log(item.split(""))})
 ```
-对象类型
+# 对象类型
 ```javascript
 // Point: x/y -> 对象类型
 // {x: number, y: number}
@@ -70,7 +70,7 @@ function printPoint(point: {x: number, y: number}) {
   printPoint({x: 123, y: 321})
   export {}
 ```
-可选类型
+# 可选类型
 ```javascript
 // Point: x/y/z -> 对象类型
 // {x: number, y: number, z?: number}
@@ -81,7 +81,7 @@ printPoint({x: 123, y: 321});
 printPoint({x: 123, y: 321, z: 111})
   export {}
 ```
-可选类型和联合类型的关系
+# 可选类型和联合类型的关系
 ```javascript
 // 让一个参数本身是可选的
 // 一个参数一个可选类型的时候, 它其实类似于是这个参数是 类型|undefined 的联合类型
@@ -89,7 +89,7 @@ printPoint({x: 123, y: 321, z: 111})
 function foo(message?: string) { console.log(message)}
 foo()
 ```
-类型别名
+# 类型别名
 >type用于定义类型别名(type alias)
 interface也可以
 ```javascript
