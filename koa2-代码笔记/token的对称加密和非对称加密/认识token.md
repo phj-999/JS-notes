@@ -92,13 +92,15 @@ openssl rsa -pubin -in <filename> -RSAPublicKey_out
 
 
 coderwhy老师的命令  
-打开苹果终端或者gitbash
-openssl
+打开苹果终端或者gitbash here
 生成私钥          私钥颁发
-genrsa -out private.key 1024
+openssl genrsa -out private.key 1024 对应的
 根据私钥生成公钥   公钥解密
-rsa - in private.key -pubout -out public.key 
+openssl rsa -in private.key -pubout -out public.key
 
+  有的使用openssl genrsa -out rsa_private.key 1024生成私钥，那么对应就必须openssl rsa -in rsa_private.key -pubout -out rsa_public.key生成公钥
+  
+  
 踩坑 MAC自带openssl  直接使用terminal终端
      windows没有自带openssl   直接使用git bash终端 或者 安装openssl  coderwhy老师建议windows直接使用git bash终端
 
