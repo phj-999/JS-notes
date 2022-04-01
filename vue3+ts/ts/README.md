@@ -103,3 +103,43 @@ type PointType = {
 function printId(id: IDType) {}
 function printPoint(point: PointType) { }
 ```
+# 类型断言 as
+有时候ts无法获取具体的信息 就需要用到类型断言
+比如document.getElementById绑定的可能是div img也可能是span  ts只知道是HTMLelement而不知道具体 此时就需要类型断言
+```javascript
+<img id='why'/>
+const el = document.getElement('why') as HTMLImageElement
+el.src='url地址'
+
+class Person{}
+class student extends Person{studiying(){}}
+function sayHello(p:Person){(p as Person).studying()}
+const stu = new student()
+sayHello(stu)
+```
+# ??和!!的作用
+## !!操作符
+将一个其他类型转换成boolean类型；类似于Boolean(变量)的方式；
+## ??操作符：空值合并操作符
+它是ES11增加的新特性；
+空值合并操作符（??）是一个逻辑操作符，当操作符的左侧是null 或者undefined 时，返回其右侧操作数，否则返回左侧操作数；
+```javascript
+const m= '12'
+const res = m ?? '123'
+console.log(res)  //左侧有值显示m的值 左边没值显示右边的123
+相当于 const  res = m ? m :'123'
+```
+# 字面量类型
+把值作为类型 这个变量不能更改
+let a:123=123
+a就不能等于312
+## 使用场景
+> 配合联合类型使用
+```Javascript
+type aa = 'weq'|'eqwe'|123
+let bb: aa='weq'
+aa='eqwe'
+aa=123
+```
+
+泛型就是将类型参数化  在调用的时候来决定是什么类型
