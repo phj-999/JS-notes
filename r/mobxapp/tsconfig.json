@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": { // 指定模块的路径，和baseUrl有关联，和webpack中resolve.alias配置一样
+      "@/*": ["./*"]
+    },
+    "target": "ESNext", // 编译的目标是什么版本的
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],// 编译过程中需要引入的库文件的列表
+    "allowJs": true,
+    "declaration": true, // 是否自动创建类型声明文件
+    "declarationDir": "./lib", // 类型声明文件的输出目录
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "removeComments": true, // 是否移除注释
+  },
+  "include": [
+    "src"
+  ]
+}
