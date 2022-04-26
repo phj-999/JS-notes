@@ -4,9 +4,9 @@ let arr = [1,2,[3,4,5,[6,7,[8,9]]]]
 const flatArr1 = (arr) => {
     return arr.flat(Infinity)
 }
-console.log(flatArr1(arr));
+console.log(flatArr1(arr),'flatArr1');
 
 //es5的方法
 let arr1 = [1,2,[3,4,5,[6,7,[8,9]]]]
 let arrEs5 = arr1.toString()
-console.log(arrEs5);
+console.log(arrEs5,'arrEs5');
