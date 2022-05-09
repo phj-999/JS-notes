@@ -1,0 +1,13 @@
+.header{
+    background-color: white;
+    color:black;
+}
+.frmLogin{
+    width: 500px;
+    margin: auto;
+}
+
+.frmLogin h2{
+    text-align: center;
+    padding: 50px 0;
+}
