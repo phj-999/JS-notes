@@ -24,6 +24,7 @@
         //import { Scene, PerspectiveCamera, WebGLRenderer, Mesh, MeshBasicMaterial } from './js/js'
 
         import { Stats } from 'threejs/stats' //检测用于动画运行的帧数
+        import { dat } from 'threejs/dat.gui/dat.gui.js'
 
         const scene = new Scene();// 创建场景
         //创建相机
@@ -113,11 +114,36 @@
         scene.add(ambienLight)
 
         var stats = addStats()
+
+
+        // 保存正方体的跳跃和跳跃速度
+        const ctrlObj = {
+            rotationSpeed: 0.01,//保存正方体的旋转速度
+            jumpSpeed: 0.01 // 保存正方体的跳跃速度
+        }
+        const ctrl = new dat.GUI()
+        // 括号里的参数旋转和跳跃速度，最后两个参数是速度的范围0~1
+        ctrl.add(ctrlObj, 'rotationSpeed', 0, 1)
+        ctrl.add(ctrlObj, 'jumpSpeed', 0, 1)
         //将场景和相机两个对象传入渲染器
         //render.render(scene, camera)
         renderScene()
         //封装一个刷新页面的方法，然后替换render.render(scene, camera)
+        
         function renderScene() {
+            //实现立方体的旋转
+            // cude.rotation.x += 0.01;
+            // cude.rotation.y += 0.01;
+            // cude.rotation.z += 0.01;
+            cude.rotation.x += ctrlObj.rotationSpeed;
+            cude.rotation.y += ctrlObj.rotationSpeed;
+            cude.rotation.z += ctrlObj.rotationSpeed;
+            //立方体实现跳跃 
+            var gap = 0
+            gap +=ctrlObj.jumpSpeed;
+            cude.position.x = 25 + (20 * (Math.sin(gap)))
+            cude.position.y = 6 + (20 * (Math.abs(Math.cos(gap))))
+
             stats.update()
             //requestAnimationFrame可以使浏览器其平滑高效的刷新
             requestAnimationFrame(renderScene)
@@ -134,6 +160,16 @@
 
             document.getElementById('myStats').appendChild(stats)
             return stats
+        }
+        
+        //三维场景自适应功能
+        //监听浏览器resize事件，再重写事件
+        window.addEventListener('resize',onWindowResize,false)
+        //回调函数中重新设置camera的aspect属性 用于重新确定浏览器需要确定的长宽比
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight
+            camera.updateProjectionMatrix() //手动更新相机投影矩阵
+            render.setSize(window.innerWidth,window.innerHeight) //重置场景渲染尺寸
         }
     </script>
 </body>
