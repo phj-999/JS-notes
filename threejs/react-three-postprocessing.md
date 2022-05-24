@@ -1,4 +1,9 @@
+[TOC]
+
+
+
 # 一、react-three/postprocessing后期处理的库是什么
+
 简而言之：包装效果
 该库提供了一个 EffectPass，可自动组织和合并任何给定的效果组合。这最大限度地减少了渲染操作的数量，并且可以组合许多效果，而不会受到传统传递链接的性能损失。此外，每个效果都可以选择自己的混合功能。
 后处理还支持开箱即用的 srgb 编码，以及 WebGL2 MSAA（多样本抗锯齿），这是 react-postprocessing 的默认设置，您可以获得高性能的清晰结果，而不会出现锯齿状边缘。
@@ -79,7 +84,7 @@
     averageLuminance={1.0} // 平均亮度 默认1
     adaptationRate={1.0} // 亮度适应率  默认1
   />
-  ```
+```
 
 #  `<HueSaturation />`色彩饱和度
 
