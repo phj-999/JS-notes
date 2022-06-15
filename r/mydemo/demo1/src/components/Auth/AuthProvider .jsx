@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
     const token = await fakeAuth();
     setToken(token);
     navigate('/dashboard');
-  }, []);
+  }, [navigate]);
 
   const handleLogout = useCallback(() => {
     setToken(null);
