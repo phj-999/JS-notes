@@ -1,8 +1,10 @@
 import { Button } from "antd";
 import React from "react";
+import { useAuth } from "../../hooks/useAuth";
 
 const Home = (props) => {
-  const { onLogin } = props;
+  // const { onLogin } = props;
+  const { onLogin } = useAuth();
   return (
     <>
       <h1>公开界面</h1>
