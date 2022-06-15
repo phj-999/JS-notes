@@ -7,19 +7,18 @@ import Navigation from "./components/Navigation";
 import React, { useCallback, useState } from "react";
 import { fakeAuth } from "./utils/fakeAuth";
 
-export const AuthContext = React.createContext()
+export const AuthContext = React.createContext(null);
 function App() {
-  const [token, setToken] = useState();
-  // 登录
+  const [token, setToken] = useState(null);
+
   const handleLogin = useCallback(async () => {
-    const usertoken = await fakeAuth();
-    setToken(usertoken);
+    const token = await fakeAuth();
+    setToken(token);
   }, []);
-  // 退出
+
   const handleLogout = useCallback(() => {
     setToken(null);
   }, []);
-
   return (
     <AuthContext.Provider value={token}>
       <h1>react router</h1>

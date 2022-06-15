@@ -5,12 +5,14 @@ import { AuthContext } from "../App";
 
 const Navigation = (props) => {
   //传递token的方式
-  const {
+  // const {
     //token,
-    onLogout
-  } = props
+  //   onLogout
+  // } = props
+
   // context的方式
   const token = useContext(AuthContext)
+
   
   return (
     <ul>
@@ -18,7 +20,7 @@ const Navigation = (props) => {
      <li><NavLink to={"/dashboard"}>dashboard</NavLink></li>
      {
       token && (
-        <Button type="danger" onClick={onLogout}>sing out</Button>
+        <Button type="danger" onClick={props.onLogout}>sing out</Button>
       )
      }
    </ul>
