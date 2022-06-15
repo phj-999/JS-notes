@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
 /**
  *组件将检查身份验证令牌是否存在。
@@ -8,9 +8,10 @@ import { useAuth } from "../../hooks/useAuth";
  */
 const ProtectedRoute = (props) => {
   const { token } = useAuth();
+  const location = useLocation();
 
-  if (!token) {
-    return <Navigate to="/home" replace />;
+  if (!token) { //重定向之前页面
+    return <Navigate to="/home" replace state={{ from: location }} />;
   }
   return props.children
 };
