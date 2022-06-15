@@ -19,6 +19,7 @@ const Navigation = (props) => {
     <ul>
      <li><NavLink to={"/home"}>home</NavLink></li>
      <li><NavLink to={"/dashboard"}>dashboard</NavLink></li>
+     <li><NavLink to={"/dashedone"}>DashedOne</NavLink></li>
      {
       token && (
         // props形式传递方法

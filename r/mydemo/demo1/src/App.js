@@ -1,5 +1,6 @@
 import "./App.css";
-import { AppTwoDemo } from "./AppDemo";
+import { AppThreeDemo } from "./AppDemo/AppThreeDemo";
+// import { AppTwoDemo } from "./AppDemo";
 // import { AppOneDemo } from "./AppDemo/AppOneDemo";
 
 
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
     {/* <AppOneDemo /> */}
-    <AppTwoDemo />
+    {/* <AppTwoDemo /> */}
+    <AppThreeDemo />
     </>
   );
 }
