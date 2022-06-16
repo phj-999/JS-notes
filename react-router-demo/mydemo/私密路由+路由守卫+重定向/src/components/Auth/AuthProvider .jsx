@@ -15,7 +15,12 @@ const AuthProvider = ({ children }) => {
   const handleLogin = useCallback(async () => {
     const token = await fakeAuth();
     setToken(token);
-    setUser({ id: '1', name: 'robin' })
+    setUser({
+      id: "1",
+      name: "robin",
+      permissions: ["analyze"],//用于权限
+      roles: ["admin"],//用于权限
+    });
     //当登录发生时，我们可以使用上一页将用户重定向到此所需页面。如果此页面从未设置为状态，则默认为“仪表板”页面
     const origin = location.state?.from?.pathname || '/dashboard';
     navigate(origin);

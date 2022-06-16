@@ -13,6 +13,11 @@ const ProtectedRoute = (props) => {
   if (!token && !user) { //重定向之前页面
     return <Navigate to="/home" replace state={{ from: location }} />;
   }
+  //用于权限
+  if (!props.isAllowed) {
+    return <Navigate to={props.redirectPath} replace />;
+  }
+
   return props.children ? props.children : <Outlet />
 };
 
