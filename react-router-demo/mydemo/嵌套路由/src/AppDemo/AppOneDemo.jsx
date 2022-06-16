@@ -5,6 +5,7 @@ import Account from "../views/main-pages/Account";
 import Home from "../views/main-pages/Home";
 import Profile from "../views/main-pages/Profile";
 import User from "../views/main-pages/users/User";
+import Users from "../views/main-pages/users/Users";
 import NoMatch from "../views/notFound/NoMatch";
 
 export function AppOneDemo() {
@@ -20,8 +21,10 @@ export function AppOneDemo() {
         <Route index element={<Home />} />
         <Route path="home" element={<Home />} />
         <Route path="user" element={<User />}>
+          <Route index element={<Profile />} />
           <Route path="profile" element={<Profile />} />
           <Route path="account" element={<Account />} />
+          <Route path="*" element={<NoMatch />} />
         </Route>
         <Route path="*" element={<NoMatch />} />
       </Routes>
