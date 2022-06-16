@@ -1,13 +1,11 @@
 import "./App.css";
-// import { AppOneDemo } from "./AppDemo/AppOneDemo";
-import { AppTwoDemo } from "./AppDemo/AppTwoDemo";
+import { AppOneDemo } from "./AppDemo/AppOneDemo";
 
 function App() {
 
   return (
     <>
-      {/* <AppOneDemo />   */}
-      <AppTwoDemo />
+      <AppOneDemo /> 
     </>
   );
 }
