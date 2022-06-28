@@ -1,6 +1,7 @@
 import React, { useRef } from "react"
 import html2canvas from "html2canvas"
 import { jsPDF } from "jspdf"
+import Father from "../views/Father"
 
 export function AppOneDemo() {
   const printRef = useRef()
@@ -28,6 +29,7 @@ export function AppOneDemo() {
 
       <div>PDF ggsgxsx</div>
       <div ref={printRef}>I will be in the PDF.</div>
+      <Father />
     </>
   )
 }
