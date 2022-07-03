@@ -1,10 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import SimpleDemo from "./Excel/SimpleDemo/SimpleDemo";
 
 function App() {
   return (
-    <div >
-
+    <div className="container">
+      <SimpleDemo />
     </div>
   );
 }
