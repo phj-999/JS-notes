@@ -1,7 +1,7 @@
 import { Workbook } from "exceljs";
 import { saveAs } from "file-saver";
 
-import { ITableHeader } from "../types/index";
+import { ITableHeader } from "../types/table";
 
 //默认列宽
 export const DEFAULT_COLUMN_WIDTH = 20;

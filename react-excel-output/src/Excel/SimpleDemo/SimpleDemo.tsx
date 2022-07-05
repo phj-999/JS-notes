@@ -3,8 +3,9 @@ import * as ExcelJs from "exceljs";
 import { Button, Card, Space, Table, Tag } from "antd";
 import { ColumnsType } from "antd/lib/table";
 
-import { StudentInfo } from "../../types";
-import { generateHeaders, saveWorkbook } from "../../utils"; //根据antd的column生成exceljs的 column
+import { StudentInfo } from "../../types/table";
+import { generateHeaders, saveWorkbook } from "../../utils/excelconfig"; //根据antd的column生成exceljs的 column
+import { downLoadExcel } from "../../utils/excelUtils";
 
 interface SimpleDemoProps { }
 
@@ -145,7 +146,16 @@ const SimpleDemo: FC<SimpleDemoProps> = () => {
   /**
    *  封装方法导出excel
    *  */
-  const onExportExcel = () => { }
+  const onExportExcel = () => {
+    downLoadExcel({
+      filename: 'test',
+      sheets: [{
+        sheetName: 'test',
+        columns: [columns],
+        dataSource: list
+      }]
+    })
+  }
   /**
   *  导出zip
   *  */
