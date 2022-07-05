@@ -32,3 +32,13 @@ export interface IDownloadFiles2Zip {
   zipName: string;
   files: IDownloadExcel[];
 }
+
+//用于导出支持多级文件夹的压缩包
+export interface IFolder {
+  folderName: string;
+  files: IDownloadExcel[];
+}
+export interface IDownloadFiles2ZipWithFolder {
+  zipName: string;
+  folders: IFolder[];
+}

@@ -5,7 +5,7 @@ import { ColumnsType } from "antd/lib/table";
 
 import { StudentInfo } from "../../types/table";
 import { generateHeaders, saveWorkbook } from "../../utils/excelconfig"; //根据antd的column生成exceljs的 column
-import { downLoadExcel, downloadFiles2Zip } from "../../utils/excelUtils";
+import { downLoadExcel, downloadFiles2Zip, downloadFiles2ZipWithFolder } from "../../utils/excelUtils";
 
 interface SimpleDemoProps { }
 
@@ -200,7 +200,124 @@ const SimpleDemo: FC<SimpleDemoProps> = () => {
   /**
   *  导出分文件夹zip
   *  */
-  const onExportFolderZip = () => { }
+  const onExportFolderZip = () => {
+    downloadFiles2ZipWithFolder({
+      zipName: '压缩包',
+      folders: [
+        {
+          folderName: '文件夹1',
+          files: [
+            {
+              filename: 'test',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+            {
+              filename: 'test2',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+          ]
+        },
+        {
+          folderName: '文件夹2',
+          files: [
+            {
+              filename: 'test',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+            {
+              filename: 'test2',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+          ]
+        },
+        {
+          folderName: '文件夹2/文件夹2-1',
+          files: [
+            {
+              filename: 'test',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+            {
+              filename: 'test2',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+          ]
+        },
+        {
+          folderName: '文件夹2/文件夹2-1/文件夹2-1-1',
+          files: [
+            {
+              filename: 'test',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+            {
+              filename: 'test2',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+          ]
+        },
+        {
+          folderName: '',
+          files: [
+            {
+              filename: 'test',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              },
+              {
+                sheetName: 'test2',
+                columns: columns,
+                dataSource: list
+              }
+              ]
+            },
+            {
+              filename: 'test2',
+              sheets: [{
+                sheetName: 'test',
+                columns: columns,
+                dataSource: list
+              }]
+            },
+          ]
+        }
+      ]
+    })
+  }
 
   return (
     <Card>

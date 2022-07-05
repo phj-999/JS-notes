@@ -1,6 +1,6 @@
 import * as ExcelJs from 'exceljs';
 import { Workbook, Worksheet, Cell, Row } from 'exceljs';
-import { IDownloadExcel, IDownloadFiles2Zip, ISheet, IStyleAttr } from '../types/excel';
+import { IDownloadExcel, IDownloadFiles2Zip, IDownloadFiles2ZipWithFolder, IFolder, ISheet, IStyleAttr } from '../types/excel';
 import { generateHeaders, saveWorkbook } from './excelconfig';
 import JsZip from 'jszip'
 import { saveAs } from 'file-saver';
@@ -155,6 +155,29 @@ export const downloadFiles2Zip = async (params: IDownloadFiles2Zip) => {
    await Promise.all(promises)
    zip.generateAsync({ type: 'blob' }).then(blob => {
       //saveAs(content, "example.zip");
+      saveAs(blob, `${params.zipName}.zip`)
+   })
+}
+
+//用于导出支持多级文件夹的压缩包
+
+const handleFolder = async (zip: JsZip, folder: IFolder) => {
+   console.log({ folder })
+   let folderPromises: Promise<any>[] = [];
+   const promises = folder?.files?.map(async param => await handleEachFile(param, zip, folder.folderName));
+   await Promise.all([...promises, ...folderPromises]);
+}
+
+
+/**
+ * 导出支持多级文件夹的压缩包
+ * @param params
+ */
+export const downloadFiles2ZipWithFolder = async (params: IDownloadFiles2ZipWithFolder) => {
+   const zip = new JsZip();
+   const outPromises = params?.folders?.map(async folder => await handleFolder(zip, folder))
+   await Promise.all(outPromises);
+   zip.generateAsync({ type: "blob" }).then(blob => {
       saveAs(blob, `${params.zipName}.zip`)
    })
 }
