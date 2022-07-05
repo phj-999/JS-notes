@@ -1,8 +1,11 @@
 import * as ExcelJs from 'exceljs';
 import { Workbook, Worksheet, Cell, Row } from 'exceljs';
-import { IDownloadExcel, ISheet, IStyleAttr } from '../types/excel';
+import { IDownloadExcel, IDownloadFiles2Zip, ISheet, IStyleAttr } from '../types/excel';
 import { generateHeaders, saveWorkbook } from './excelconfig';
+import JsZip from 'jszip'
+import { saveAs } from 'file-saver';
 
+//用于 封装方法导出excel的封装方法
 /**
  * 给表格添加样式
  * @param cell 
@@ -124,4 +127,34 @@ export const downLoadExcel = (params: IDownloadExcel) => {
    const workbook = new ExcelJs.Workbook()
    params?.sheets?.forEach((sheet) => handleEachSheet(workbook, sheet));
    saveWorkbook(workbook, `${params.filename}.xlsx`)
+}
+
+//用于压缩包下载格式方法
+
+const handleEachFile = async (param: IDownloadExcel, zip: JsZip, folderName: string) => {
+   // 创建工作普
+   const workbook = new ExcelJs.Workbook()
+   param?.sheets?.forEach(sheet => { handleEachSheet(workbook, sheet) })
+   // 生成blob
+   const data = await workbook.xlsx.writeBuffer()
+   const blob = new Blob([data], { type: '' })
+   if (folderName) {
+      zip.folder(folderName)?.file(`${param.filename}.xlsx`, blob)
+   } else {
+      // 写入 zip 中一个文件
+      zip.file(`${param.filename}.xlsx`, blob);
+   }
+}
+
+/**
+ * 导出多个文件为zip压缩包
+ */
+export const downloadFiles2Zip = async (params: IDownloadFiles2Zip) => {
+   const zip = new JsZip()
+   const promises = params?.files?.map(async (param) => (await handleEachFile(param, zip, '')))
+   await Promise.all(promises)
+   zip.generateAsync({ type: 'blob' }).then(blob => {
+      //saveAs(content, "example.zip");
+      saveAs(blob, `${params.zipName}.zip`)
+   })
 }

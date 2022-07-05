@@ -1,9 +1,9 @@
-import { ColumnsType } from "antd/lib/table";
+import {ColumnType} from 'antd/es/table/interface';
 
 export interface ISheet {
   // sheet名字
   sheetName: string;
-  columns: ColumnsType<any>[];
+  columns: ColumnType<any>[];
   dataSource: any[];
 }
 
@@ -25,4 +25,10 @@ export interface IStyleAttr {
     | "centerContinuous"
     | undefined;
   bold?: boolean;
+}
+
+//压缩包
+export interface IDownloadFiles2Zip {
+  zipName: string;
+  files: IDownloadExcel[];
 }

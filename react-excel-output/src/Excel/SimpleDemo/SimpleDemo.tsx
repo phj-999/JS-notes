@@ -5,7 +5,7 @@ import { ColumnsType } from "antd/lib/table";
 
 import { StudentInfo } from "../../types/table";
 import { generateHeaders, saveWorkbook } from "../../utils/excelconfig"; //根据antd的column生成exceljs的 column
-import { downLoadExcel } from "../../utils/excelUtils";
+import { downLoadExcel, downloadFiles2Zip } from "../../utils/excelUtils";
 
 interface SimpleDemoProps { }
 
@@ -151,7 +151,7 @@ const SimpleDemo: FC<SimpleDemoProps> = () => {
       filename: 'test',
       sheets: [{
         sheetName: 'test',
-        columns: [columns],
+        columns: columns,
         dataSource: list
       }]
     })
@@ -159,7 +159,44 @@ const SimpleDemo: FC<SimpleDemoProps> = () => {
   /**
   *  导出zip
   *  */
-  const onExportZip = () => { }
+  const onExportZip = () => {
+    downloadFiles2Zip({
+      zipName: '压缩包',
+      files: [
+        {
+          filename: 'test',
+          sheets: [
+            {
+              sheetName: 'test',
+              columns: columns,
+              dataSource: list
+            },
+            {
+              sheetName: 'test2',
+              columns: columns,
+              dataSource: list
+            }
+          ]
+        },
+        {
+          filename: 'test2',
+          sheets: [{
+            sheetName: 'test',
+            columns: columns,
+            dataSource: list
+          }]
+        },
+        {
+          filename: 'test3',
+          sheets: [{
+            sheetName: 'test',
+            columns: columns,
+            dataSource: list
+          }]
+        }
+      ]
+    })
+  }
   /**
   *  导出分文件夹zip
   *  */
