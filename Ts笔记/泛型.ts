@@ -1,3 +1,6 @@
+//数组泛型（Array Generic） Array<elemType> 来表示数组：
+let fibonacci: Array<number> = [1, 1, 2, 3, 5];
+
 /**
  * 函数中使用泛型
  * 
