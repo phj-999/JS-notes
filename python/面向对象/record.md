@@ -48,6 +48,6 @@ class Dog(Animal):
 
 class SmallDOg(Dog):
     def hah(self):
-        super().jiao() # 调用父类的方法
+        super().jiao() # 调用父类的方法 或者Dog.jiao(self)
 # SmallDOg中的jiao就是对父类方法的jiao方法的重写
 ```
