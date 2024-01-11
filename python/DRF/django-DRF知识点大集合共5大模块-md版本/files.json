@@ -1,0 +1,265 @@
+[
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/0__课程介绍.md",
+    "url": "http://127.0.0.1:8080/index.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/1.1__Web应用模式.md",
+    "url": "http://127.0.0.1:8080/C01-IntroduceToDRF/SeparatedFrontendAndBackend.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework",
+    "imgs": [
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/../images/depended_frontend_backend.png",
+        "img_url": "http://127.0.0.1:8080/images/depended_frontend_backend.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/../images/indepent_frontend_backend.png",
+        "img_url": "http://127.0.0.1:8080/images/indepent_frontend_backend.png"
+      }
+    ]
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/1.2__RESTful设计方法.md",
+    "url": "http://127.0.0.1:8080/C01-IntroduceToDRF/HowToDesignREST.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/1.3__使用Django开发REST接口.md",
+    "url": "http://127.0.0.1:8080/C01-IntroduceToDRF/DevelopRESTAPIWithDjango.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/1.4__明确REST接口开发的核心任务.md",
+    "url": "http://127.0.0.1:8080/C01-IntroduceToDRF/CoreTaskToDevelopRESTAPI.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/1.5__DjangoRESTframework简介.md",
+    "url": "http://127.0.0.1:8080/C01-IntroduceToDRF/AboutDRF.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework",
+    "imgs": [
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/../images/drf_logo.png",
+        "img_url": "http://127.0.0.1:8080/images/drf_logo.png"
+      }
+    ]
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework/1__引入DjangoRESTframework.md",
+    "url": "http://127.0.0.1:8080/C01-IntroduceToDRF/index.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/1__引入DjangoRESTframework",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/2.1__环境安装与配置.md",
+    "url": "http://127.0.0.1:8080/C02-DRFProject/InstallAndConfig.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/2.2__见识DRF的魅力.md",
+    "url": "http://127.0.0.1:8080/C02-DRFProject/TheFirstDRFProgram.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建",
+    "imgs": [
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/图书接口Web浏览页面.png",
+        "img_url": "http://127.0.0.1:8080/images/图书接口Web浏览页面.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/查询所有图书信息1.png",
+        "img_url": "http://127.0.0.1:8080/images/查询所有图书信息1.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/查询所有图书页面2.png",
+        "img_url": "http://127.0.0.1:8080/images/查询所有图书页面2.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/保存新图书信息.png",
+        "img_url": "http://127.0.0.1:8080/images/保存新图书信息.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/保存图书返回信息.png",
+        "img_url": "http://127.0.0.1:8080/images/保存图书返回信息.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/获取单一图书信息.png",
+        "img_url": "http://127.0.0.1:8080/images/获取单一图书信息.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/修改图书信息.png",
+        "img_url": "http://127.0.0.1:8080/images/修改图书信息.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/修改图书返回信息.png",
+        "img_url": "http://127.0.0.1:8080/images/修改图书返回信息.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/删除图书.png",
+        "img_url": "http://127.0.0.1:8080/images/删除图书.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/../images/删除返回信息.png",
+        "img_url": "http://127.0.0.1:8080/images/删除返回信息.png"
+      }
+    ]
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建/2__DRF工程搭建.md",
+    "url": "http://127.0.0.1:8080/C02-DRFProject/index.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/2__DRF工程搭建",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器/3.1__定义Serializer.md",
+    "url": "http://127.0.0.1:8080/C03-Serializer/Declaring.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器/3.2__序列化使用.md",
+    "url": "http://127.0.0.1:8080/C03-Serializer/Serializing.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器/3.3__反序列化使用.md",
+    "url": "http://127.0.0.1:8080/C03-Serializer/Deserializing.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器/3.4__模型类序列化器ModelSerializer.md",
+    "url": "http://127.0.0.1:8080/C03-Serializer/ModelSerializer.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器/3__Serializer序列化器.md",
+    "url": "http://127.0.0.1:8080/C03-Serializer/index.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/3__Serializer序列化器",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/4.1__Request与Response.md",
+    "url": "http://127.0.0.1:8080/C04-View/RequestAndResponse.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/4.2__视图概览.md",
+    "url": "http://127.0.0.1:8080/C04-View/View.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图",
+    "imgs": [
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/../images/通用视图的继承关系.png",
+        "img_url": "http://127.0.0.1:8080/images/通用视图的继承关系.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/../images/通用视图的继承关系_含方法和属性.png",
+        "img_url": "http://127.0.0.1:8080/images/通用视图的继承关系_含方法和属性.png"
+      }
+    ]
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/4.3__视图说明.md",
+    "url": "http://127.0.0.1:8080/C04-View/ViewIntroduction.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/4.4__视图集ViewSet.md",
+    "url": "http://127.0.0.1:8080/C04-View/ViewSet.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图",
+    "imgs": [
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/../images/视图集类继承关系.png",
+        "img_url": "http://127.0.0.1:8080/images/视图集类继承关系.png"
+      }
+    ]
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/4.5__路由Router.md",
+    "url": "http://127.0.0.1:8080/C04-View/Routers.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图",
+    "imgs": [
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/../images/simple_router.png",
+        "img_url": "http://127.0.0.1:8080/images/simple_router.png"
+      },
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/../images/default_router.png",
+        "img_url": "http://127.0.0.1:8080/images/default_router.png"
+      }
+    ]
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图/4__视图.md",
+    "url": "http://127.0.0.1:8080/C04-View/index.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/4__视图",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5.1__认证.md",
+    "url": "http://127.0.0.1:8080/C05-Components/Authentication.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5.2__权限.md",
+    "url": "http://127.0.0.1:8080/C05-Components/Permissions.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5.3__限流.md",
+    "url": "http://127.0.0.1:8080/C05-Components/Throttling.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5.4__过滤.md",
+    "url": "http://127.0.0.1:8080/C05-Components/Filtering.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5.5__排序.md",
+    "url": "http://127.0.0.1:8080/C05-Components/Ordering.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5.6__分页.md",
+    "url": "http://127.0.0.1:8080/C05-Components/Pagination.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5.7__异常处理.md",
+    "url": "http://127.0.0.1:8080/C05-Components/Exceptions.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": []
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5.8__自动生成接口文档.md",
+    "url": "http://127.0.0.1:8080/C05-Components/Documents.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": [
+      {
+        "img_file": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/../images/接口文档网页.png",
+        "img_url": "http://127.0.0.1:8080/images/接口文档网页.png"
+      }
+    ]
+  },
+  {
+    "file_name": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能/5__其他功能.md",
+    "url": "http://127.0.0.1:8080/C05-Components/index.html",
+    "prepath_dir": "E:\\code\\project\\person_project\\3-tools\\zimeiti\\g_article\\res_package\\2-data\\2_md\\django-DRF知识点大集合共5大模块\\django-DRF知识点大集合共5大模块/5__其他功能",
+    "imgs": []
+  }
+]
